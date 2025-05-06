@@ -1,9 +1,129 @@
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-body {
-    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
   }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #005f5f;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin: 25px 0 15px;
+    color: #004040;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #003333;
+  }
+  
+  /* Lists */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  ul li {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  /* Repo Link */
+  .repo-link {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #007b7b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Commands Section */
+  .commands-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+  }
+  
+  .commands-box {
+    flex: 1;
+    min-height: 550px;
+    background-color: #e6f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .commands-box:hover {
+    transform: scale(1.03);
+  }
+  
+  .commands-box h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #003333;
+  }
+  
+  .commands-box pre {
+    background-color: #fff;
+    padding: 70px;
+    border-radius: 45px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #003333;
+    overflow-x: auto;
+    flex: 1;
+  }
+  
+  /* Divider Style */
+  .divider {
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #007b7b, transparent);
+    margin: 30px auto;
+    border-radius: 2px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .commands-container {
+      flex-direction: column;
+    }
+  }
+  
+  

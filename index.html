@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Workflow Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
+  <div class="container">
+    <h1>Project Management - Git Workflow</h1>
+
+    <p>This project demonstrates how a team collaborates using Git & GitHub.
+    <p>We followed standard Git practices to simulate real-world version control workflows.
+
+    <div class="divider"></div>
+
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>VS Code</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Branch Management</li>
+      <li>Stashing and Merging</li>
+      <li>Reset and Undo</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>Git Commands Summary</h2>
+
+    <div class="commands-container">
+      <div class="commands-box">
+        <h3>Basic Git Commands</h3>
+        <pre><code>git init
+
+
+git status
+
+
+git add .
+
+
+git commit -m "message"
+
+
+git checkout -b feature/branch-name
+
+
+git merge feature/branch-name
+</code></pre>
+      </div>
+
+      <div class="commands-box">
+        <h3>Remote & Advanced Commands</h3>
+        <pre><code>git remote add origin 
+https://github.com/your-username/project.git
+
+
+git push -u origin master
+
+
+git pull origin master
+
+
+git stash
+
+
+git stash pop
+
+
+git reset --soft HEAD~1
+
+
+git reset --hard HEAD~1
+</code></pre>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Workflow Summary</h2>
+    <ul>
+      <li>Created a new Git branch for the contact form feature.</li>
+      <li>Stashed changes, made new commits, then restored the stash.</li>
+      <li>Pushed changes to GitHub and pulled updates.</li>
+      <li>Practiced undoing commits using reset.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>GitHub Repository</h2>
+    <p class="repo-link">
+      <a href="https://github.com/kerolos125/project_mangement" target="_blank">Click here</a>
+    </p>
+  </div>
 </body>
 </html>
-
-<p>This is a simple portfolio page to showcase my work.</p>
